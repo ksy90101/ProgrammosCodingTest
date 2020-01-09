@@ -12,6 +12,7 @@
 Arrays.stream(array).filter(factor -> factor % divisor == 0).toArray();
 ````
 
+- [github](https://github.com/ksy90101/ProgrammosCodingTest/blob/master/src/Level01/DividingNumberArray.java)
 ### 문제 및 풀이
 
 **문제 설명**
