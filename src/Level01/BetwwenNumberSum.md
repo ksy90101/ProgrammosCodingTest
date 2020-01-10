@@ -12,9 +12,9 @@
 
 - 그저 반복문이 좋지 않다는 생각을 버리자!
 
-- [for문 github](https://github.com/ksy90101/ProgrammosCodingTest/blob/master/src/Level01/DividingNumberArray.java)
+- [for문 github](https://github.com/ksy90101/ProgrammosCodingTest/blob/master/src/Level01/BetweenNumberSum.java)
 
-- [Stream github](https://github.com/ksy90101/ProgrammosCodingTest/blob/master/src/Level01/DividingNumberArray.java)
+- [Stream github](https://github.com/ksy90101/ProgrammosCodingTest/blob/master/src/Level01/BetweenNumberSumStream.java)
 
 ### 문제 및 풀이
 
