@@ -4,16 +4,17 @@
 
 ### 간략한 문제 풀이
 
-- 입력값은 '입력값/2' 이하만 압축 가능합니다.
-(예를들어 8글자인 경우 4글자 이하, 7글자인 경우에는 3글자)
+- Calendar 클래스를 이용하여 날짜를 검색하여 요일을 출력하는 문제
 
-- 한글자 부터 입력값/2글자까지 반복을 하여, 압축을 하고 Math.min()을 이용하여 최소값을 찾게 됩니다.
+- 사실, 월이 1 ~ 12가 아닌, 0 ~ 11이다 보니, 그 부분을 알수 있었다.
 
-- subString()을 이용하여 문자열을 잘랐습니다.
+- set()메서드에 넣을때 따라서 month인자값에 넣을때 a-1로 했다.
 
-- StringBuffer를 사용하긴 했지만, compareStr1, 2에도 사용했다면, 시간이 덜 걸리게 나올수 있었을텐데, 쉽지가 않네요 ㅎㅎ
+- 날짜 클래스를 쓸수 있는 좋은 문제였던 것 같다.
 
-- 개인적으로 보안은 역시 어렵습니다. ㅠㅠ
+- [Calendar Class](http://tcpschool.com/java/java_api_calendar)
+
+- [Github](https://github.com/ksy90101/ProgrammosCodingTest/blob/master/src/Level01/YearOf2016.java)
 
 ### 문제 및 풀이
 
