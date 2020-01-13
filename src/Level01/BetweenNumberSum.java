@@ -6,7 +6,7 @@ package Level01;
  * @URL : https://programmers.co.kr/learn/courses/30/lessons/12912
  */
 public class BetweenNumberSum {
-    public long soulution(int a, int b) {
+    public long solution(int a, int b) {
         long answer = 0;
 
         for (int i = Math.min(a, b); i <= Math.max(a, b); i++) {
@@ -28,8 +28,8 @@ public class BetweenNumberSum {
         int b2 = 3;
         int b3 = 3;
 
-        System.out.println(betweenNumberSum.soulution(a1, b1));
-        System.out.println(betweenNumberSum.soulution(a2, b2));
-        System.out.println(betweenNumberSum.soulution(a3, b3));
+        System.out.println(betweenNumberSum.solution(a1, b1));
+        System.out.println(betweenNumberSum.solution(a2, b2));
+        System.out.println(betweenNumberSum.solution(a3, b3));
     }
 }

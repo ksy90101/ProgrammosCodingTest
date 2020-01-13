@@ -8,7 +8,7 @@ import java.util.stream.LongStream;
  * @URL : https://programmers.co.kr/learn/courses/30/lessons/12912
  */
 public class BetweenNumberSumStream {
-    public long soulution(int a, int b) {
+    public long solution(int a, int b) {
         long answer = 0;
 
         LongStream longStream = LongStream.rangeClosed(Math.min(a,b), Math.max(a,b));
@@ -30,8 +30,8 @@ public class BetweenNumberSumStream {
         int b2 = 3;
         int b3 = 3;
 
-        System.out.println(betweenNumberSum.soulution(a1, b1));
-        System.out.println(betweenNumberSum.soulution(a2, b2));
-        System.out.println(betweenNumberSum.soulution(a3, b3));
+        System.out.println(betweenNumberSum.solution(a1, b1));
+        System.out.println(betweenNumberSum.solution(a2, b2));
+        System.out.println(betweenNumberSum.solution(a3, b3));
     }
 }
