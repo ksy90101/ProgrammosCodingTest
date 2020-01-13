@@ -13,6 +13,8 @@
 s.chars().filter( e -> 'P'== e).count() == s.chars().filter( e -> 'Y'== e).count();
 ````
 
+- [Github](https://github.com/ksy90101/ProgrammosCodingTest/blob/master/src/Level01/POrYNumberOfString.java)
+
 ### 문제 및 풀이
 
 **문제 설명**
