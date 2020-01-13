@@ -23,7 +23,7 @@
         - delimiter : 구분문자
         - elements : 결합할 요소들
         
-- [github](https://github.com/ksy90101/ProgrammosCodingTest/blob/master/src/Level01/BetweenNumberSum.java)
+- [github](https://github.com/ksy90101/ProgrammosCodingTest/blob/master/src/Level01/DescendingString.java)
 
 ### 문제 및 풀이
 
