@@ -48,63 +48,47 @@ sun, bed, car의 1번째 인덱스 값은 각각 u, e, a 입니다. 이를 기�
 abce와 abcd, cdx의 2번째 인덱스 값은 c, c, x입니다. 따라서 정렬 후에는 cdx가 가장 뒤에 위치합니다. abce와 abcd는 사전순으로 정렬하면 abcd가 우선하므로, 답은 [abcd, abce, cdx] 입니다.
 
 ````
-package Level01;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /**
- * @ClassName : StringCompression
- * @ProblemName : 문자열 압축
- * @URL : https://programmers.co.kr/learn/courses/30/lessons/60057
+ * @ClassName : WantStringSort
+ * @ProblemName : 문자열 내 마음대로 정렬하기
+ * @URL : https://programmers.co.kr/learn/courses/30/lessons/12915
  */
-public class StringCompression {
+public class WantStringSort {
 
-    public int solution(String s) {
-        final int S_LENGTH = s.length();
-        int answer = S_LENGTH;
+    public String[] solution(String[] strings, int n) {
+        String[] answer = new String[strings.length];
+        List<String> list = new ArrayList<>();
 
-        for (int i = 1; i <= S_LENGTH / 2; i++) {
-            String compareStr1 = "";
-            StringBuffer result = new StringBuffer();
-            int count = 1;
+        for (String string : strings){
+            list.add(string.charAt(n) + string);
+        }
 
-            for (int j = 0; j < S_LENGTH / i; j++){
-                String compareStr2 = s.substring((i * j), (i * j) + i);
-                if(compareStr1.equals(compareStr2)){
-                    count++;
-                    continue;
-                }
+        Collections.sort(list);
 
-                result.append((count > 1) ? count + compareStr1 : compareStr1);
-
-                compareStr1 = compareStr2;
-                count = 1;
-            }
-
-            result.append((count > 1) ? count + compareStr1 : compareStr1);
-
-            if(S_LENGTH % i != 0){
-                result.append(s.substring(S_LENGTH - (S_LENGTH % i), S_LENGTH));
-            }
-            answer = Math.min(result.length(), answer);
+        for (int i = 0; i < list.size(); i++){
+            answer[i] = list.get(i).substring(1);
         }
 
         return answer;
     }
 
-    //TestCase
+    //Test Case
     public static void main(String[] args) {
-        StringCompression stringCompression = new StringCompression();
+        WantStringSort wantStringSort = new WantStringSort();
 
-        String testCase1 = "aabbaccc";
-        String testCase2 = "ababcdcdababcdcd";
-        String testCase3 = "abcabcdede";
-        String testCase4 = "abcabcabcabcdededededede";
-        String testCase5 = "xababcdcdababcdcd";
+        String[] strings1 = {"sun", "bed", "car"};
+        String[] strings2 = {"abce", "abcd", "cdx"};
 
-        System.out.println(stringCompression.solution(testCase1));
-        System.out.println(stringCompression.solution(testCase2));
-        System.out.println(stringCompression.solution(testCase3));
-        System.out.println(stringCompression.solution(testCase4));
-        System.out.println(stringCompression.solution(testCase5));
+        int n1 = 1;
+        int n2 = 2;
+
+        System.out.println(Arrays.toString(wantStringSort.solution(strings1, n1)));
+        System.out.println(Arrays.toString(wantStringSort.solution(strings2, n2)));
     }
 }
 ````
