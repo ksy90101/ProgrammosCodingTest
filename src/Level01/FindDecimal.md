@@ -40,6 +40,8 @@
 
 - 소수 찾기의 대표적인 에라토스테네스의 체가 있는데, 이 문제도 나중에 풀어봐야 될 것 같습니다!
 
+- [github](https://github.com/ksy90101/ProgrammosCodingTest/blob/master/src/Level01/FindDecimal.java)
+
 ### 문제 및 풀이
 
 **문제 설명**
@@ -71,8 +73,6 @@ n은 2이상 1000000이하의 자연수입니다.
 1부터 5 사이의 소수는 [2,3,5] 3개가 존재하므로 3를 반환
 
 ````
-package Level01;
-
 /**
  * @ClassName : FindDecimal
  * @ProblemName : 소수 찾기
