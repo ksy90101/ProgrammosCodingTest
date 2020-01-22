@@ -5,7 +5,7 @@
 ### 간략한 문제 풀이
 
 - for문과 Stream으로 양쪽에서 풀어봤는데, 예전에 풀었던 [두 숫자 사이의 합](https://rutgo.tistory.com/416?category=808714)문제와 동일하게 stream이 효율성에서 더 낮게 나왔다..
-
+    
 - 크게 어려운 점은 없었으니, 따로 추가할 내용은 없을 듯 하다.
 
 - [github](https://github.com/ksy90101/ProgrammosCodingTest/blob/master/src/Level01/DivisorSum.java)
