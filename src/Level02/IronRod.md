@@ -1,6 +1,6 @@
 # [프로그래머스] 코딩테스트 연습
 
-## [기능 개발](https://programmers.co.kr/learn/courses/30/lessons/42586)
+## [쇠막대기](https://programmers.co.kr/learn/courses/30/lessons/42585)
 
 ### 간략한 문제 풀이
 
@@ -76,7 +76,7 @@ import java.util.Stack;
 /**
  * @ClassName : IronRod
  * @ProblemName : 쇠막대기
- * @URL :
+ * @URL : https://programmers.co.kr/learn/courses/30/lessons/42585
  */
 public class IronRod {
     public int solution(String arrangement){
